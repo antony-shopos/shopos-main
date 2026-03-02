@@ -4,7 +4,7 @@ export default function ShoposWebHero() {
   return (
     <SectionLayout
       className="bg-[#FAFAFA] relative"
-      borderClass="border-[#E5E5E5]"
+      borderClass="border-[#D4D4D4]"
     >
       <div className="relative py-16 md:py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
 

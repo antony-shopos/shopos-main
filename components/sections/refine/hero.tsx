@@ -2,7 +2,7 @@ import SectionLayout from '@/components/SectionLayout'
 
 export default function ShoposRefineHero() {
   return (
-    <SectionLayout className="bg-[#FAFAFA] relative" borderClass="border-[#E5E5E5]">
+    <SectionLayout className="bg-[#FAFAFA] relative" borderClass="border-[#D4D4D4]">
       <div className="relative py-16 md:py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
         {/* Side Gradient Fades INSIDE locked container */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-[#FAFAFA] to-transparent" />
@@ -26,7 +26,8 @@ export default function ShoposRefineHero() {
               marginBottom: '8px',
             }}
           >
-            90% AI → 100% quality
+            AI gets you 90%.<br />
+Close the last 10%.
           </h1>
 
           {/* Description */}
@@ -42,7 +43,9 @@ export default function ShoposRefineHero() {
               margin: '0 auto 24px auto',
             }}
           >
-            Comment-based iteration. Expert polish. Feedback trains the AI. Publish-ready.
+            Most AI tools give you "regenerate" as the only option.
+Refine gives you actual control.<br/><br/>Fix a face. Adjust lighting. Change a background.
+Tweak copy tone. Surgical edits, not starting over.
           </p>
         </div>
 

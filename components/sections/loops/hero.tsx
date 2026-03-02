@@ -2,7 +2,7 @@ import SectionLayout from '@/components/SectionLayout'
 
 export default function ShoposLoopsHero() {
   return (
-    <SectionLayout className="bg-[#FAFAFA] relative" borderClass="border-[#E5E5E5]">
+    <SectionLayout className="bg-[#FAFAFA] relative" borderClass="border-[#D4D4D4]">
       <div className="relative py-16 md:py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
         {/* Side Gradient Fades INSIDE locked container */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-[#FAFAFA] to-transparent" />
@@ -26,7 +26,7 @@ export default function ShoposLoopsHero() {
               marginBottom: '8px',
             }}
           >
-            From casino to laboratory
+            Simulate. Listen. Test. Repeat.
           </h1>
 
           {/* Description */}
@@ -42,7 +42,11 @@ export default function ShoposLoopsHero() {
               margin: '0 auto 24px auto',
             }}
           >
-            Continuous learning engine. Context graph gets richer with every campaign.
+            Manual creative testing: you test 5 things per quarter.
+Track results in a spreadsheet. Brief your designer
+based on gut feel.<br/><br/>Loops: 500 variants tested per week. Connected to your
+ad accounts and store. Autonomous. Always running.
+You set the goal. The agents do the work.
           </p>
         </div>
 
@@ -60,10 +64,12 @@ export default function ShoposLoopsHero() {
                 className="w-[24px] h-[24px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Upload</h3>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">SIMULATE</h3>
             <p className="text-[#525252] text-[14px] leading-[22px]">
-              Complete onboarding in 15 minutes. Essentials walks through 6 spaces from logos to
-              photography style.
+              Loops generates variant batches based on your Brand Memory
+and Context Graph. Each variant is a hypothesis.
+Different backgrounds, different crops, different copy,
+different CTAs.
             </p>
           </div>
 
@@ -76,10 +82,11 @@ export default function ShoposLoopsHero() {
                 className="w-[24px] h-[24px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Reference</h3>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">LISTEN</h3>
             <p className="text-[#525252] text-[14px] leading-[22px]">
-              Every output checks Memory first. Creating a photo? Memory provides approved colors
-              and logo rules.
+              Loops monitors real-world performance. Click-through rates,
+conversion rates, add-to-cart rates, ROAS.
+Revenue metrics, not vanity metrics.
             </p>
           </div>
 
@@ -92,10 +99,11 @@ export default function ShoposLoopsHero() {
                 className="w-[24px] h-[27.5px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Update</h3>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">TEST</h3>
             <p className="text-[#525252] text-[14px] leading-[22px]">
-              Single source of truth. Rebrand happening? Update once, and every future output
-              follows suit.
+              Loops pushes winning variants and retires losers.
+Statistically significant decisions, not gut calls.
+No manual intervention required.
             </p>
           </div>
 
@@ -108,10 +116,11 @@ export default function ShoposLoopsHero() {
                 className="w-[24px] h-[27.5px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Update</h3>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">REPEAT</h3>
             <p className="text-[#525252] text-[14px] leading-[22px]">
-              Single source of truth. Rebrand happening? Update once, and every future output
-              follows suit.
+              Every cycle makes the system smarter. The Context Graph
+absorbs the results. Next batch starts from a higher
+baseline. Continuously.
             </p>
           </div>
 

@@ -126,12 +126,12 @@ export default function Navbar() {
               >
                 <div className="bg-white rounded-[12px] shadow-[0_30px_80px_rgba(0,0,0,0.15)] p-[20px] grid grid-cols-2 gap-x-[20px] gap-y-[12px]">
                   <DropdownItem title="Use Cases" desc="Built for every brand" icon="/images/navbar/usecases.svg" href="/use-cases" />
-                  <DropdownItem title="Loops" desc="Performance improves itself" icon="/images/navbar/loops.svg" href="/loops" />
+                  <DropdownItem title="Loops" desc="Performance improves itself" icon="/images/navbar/loops.svg" href="/product/loops" />
                   <DropdownItem title="Spaces" desc="Workflows trained for ecommerce" icon="/images/navbar/spaces.svg" href="/spaces" />
-                  <DropdownItem title="Files" desc="A library of proven winners" icon="/images/navbar/files.svg" href="/files" />
-                  <DropdownItem title="Refine" desc="Human edits train intelligence" icon="/images/navbar/refine.svg" href="/refine" />
-                  <DropdownItem title="Cowork" desc="Your AI commerce operator" icon="/images/navbar/cowork.svg" href="/cowork" />
-                  <DropdownItem title="Brand Memory" desc="Brand rules, always remembered" icon="/images/navbar/memory.svg" href="/brand-memory" />
+                  <DropdownItem title="Files" desc="A library of proven winners" icon="/images/navbar/files.svg" href="/product/files" />
+                  <DropdownItem title="Refine" desc="Human edits train intelligence" icon="/images/navbar/refine.svg" href="/product/refine" />
+                  <DropdownItem title="Cowork" desc="Your AI commerce operator" icon="/images/navbar/cowork.svg" href="/product/cowork" />
+                  <DropdownItem title="Brand Memory" desc="Brand rules, always remembered" icon="/images/navbar/memory.svg" href="/product/brand-memory" />
                 </div>
               </div>
             </div>
@@ -219,12 +219,12 @@ export default function Navbar() {
             >
               <div className="flex flex-col gap-4">
                 <DropdownItem title="Use Cases" desc="Built for every brand" icon="/images/navbar/usecases.svg" href="/use-cases" onClick={() => setMobileOpen(false)} />
-                <DropdownItem title="Loops" desc="Performance improves itself" icon="/images/navbar/loops.svg" href="/loops" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Loops" desc="Performance improves itself" icon="/images/navbar/loops.svg" href="/product/loops" onClick={() => setMobileOpen(false)} />
                 <DropdownItem title="Spaces" desc="Workflows trained for ecommerce" icon="/images/navbar/spaces.svg" href="/spaces" onClick={() => setMobileOpen(false)} />
-                <DropdownItem title="Files" desc="A library of proven winners" icon="/images/navbar/files.svg" href="/files" onClick={() => setMobileOpen(false)} />
-                <DropdownItem title="Refine" desc="Human edits train intelligence" icon="/images/navbar/refine.svg" href="/refine" onClick={() => setMobileOpen(false)} />
-                <DropdownItem title="Cowork" desc="Your AI commerce operator" icon="/images/navbar/cowork.svg" href="/cowork" onClick={() => setMobileOpen(false)} />
-                <DropdownItem title="Brand Memory" desc="Brand rules, always remembered" icon="/images/navbar/memory.svg" href="/brand-memory" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Files" desc="A library of proven winners" icon="/images/navbar/files.svg" href="/product/files" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Refine" desc="Human edits train intelligence" icon="/images/navbar/refine.svg" href="/product/refine" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Cowork" desc="Your AI commerce operator" icon="/images/navbar/cowork.svg" href="/product/cowork" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Brand Memory" desc="Brand rules, always remembered" icon="/images/navbar/memory.svg" href="/product/brand-memory" onClick={() => setMobileOpen(false)} />
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import SectionLayout from '@/components/SectionLayout'
 
 export default function ShoposFilesHero() {
   return (
-    <SectionLayout className="bg-[#FAFAFA] relative" borderClass="border-[#E5E5E5]">
+    <SectionLayout className="bg-[#FAFAFA] relative" borderClass="border-[#D4D4D4]">
       <div className="relative py-16 md:py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
         {/* Side Gradient Fades INSIDE locked container */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-[#FAFAFA] to-transparent" />
@@ -26,7 +26,7 @@ export default function ShoposFilesHero() {
               marginBottom: '8px',
             }}
           >
-            System of record for commerce
+            Your asset library knows things
           </h1>
 
           {/* Description */}
@@ -42,7 +42,8 @@ export default function ShoposFilesHero() {
               margin: '0 auto 24px auto',
             }}
           >
-            Active asset intelligence. Quality scoring, performance tracking, auto-SKU linking.
+            Most asset libraries know where things are.
+Files knows what things do.
           </p>
         </div>
 
@@ -60,10 +61,10 @@ export default function ShoposFilesHero() {
                 className="w-[24px] h-[24px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Upload</h3>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Auto-Organization</h3>
             <p className="text-[#525252] text-[14px] leading-[22px]">
-              Complete onboarding in 15 minutes. Essentials walks through 6 spaces from logos to
-              photography style.
+              Every asset tagged with product SKU, category, content type,
+channel, campaign, date. No manual tagging. No folder chaos.
             </p>
           </div>
 
@@ -76,10 +77,10 @@ export default function ShoposFilesHero() {
                 className="w-[24px] h-[24px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Reference</h3>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Quality Scoring</h3>
             <p className="text-[#525252] text-[14px] leading-[22px]">
-              Every output checks Memory first. Creating a photo? Memory provides approved colors
-              and logo rules.
+              Resolution, composition, brand consistency, marketplace compliance.
+Every image scored automatically. Fix issues before they cost you.
             </p>
           </div>
 
@@ -92,10 +93,10 @@ export default function ShoposFilesHero() {
                 className="w-[24px] h-[27.5px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Update</h3>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Performance Tracking</h3>
             <p className="text-[#525252] text-[14px] leading-[22px]">
-              Single source of truth. Rebrand happening? Update once, and every future output
-              follows suit.
+              Connect your channels. See which assets perform best.
+Sort by CTR, conversion rate, ROAS.
             </p>
           </div>
 
@@ -108,10 +109,43 @@ export default function ShoposFilesHero() {
                 className="w-[24px] h-[27.5px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Update</h3>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Smart Search</h3>
             <p className="text-[#525252] text-[14px] leading-[22px]">
-              Single source of truth. Rebrand happening? Update once, and every future output
-              follows suit.
+              Natural language. "Red dress on model, outdoor setting."
+Filter by quality score, performance, date, channel.
+            </p>
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-[#FFFFFF] rounded-2xl p-6">
+            <div className="w-10 h-10 mb-6 bg-white border border-black/10 rounded-xl flex items-center justify-center">
+              <img
+                src="/images/shopos-web/shopifysync.png"
+                alt="Shopify sync"
+                className="w-[24px] h-[27.5px] object-contain"
+              />
+            </div>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Version History</h3>
+            <p className="text-[#525252] text-[14px] leading-[22px]">
+              Every edit, every variant tracked. Compare performance
+across versions of the same asset.
+            </p>
+          </div>
+
+          {/* Card 6 */}
+          <div className="bg-[#FFFFFF] rounded-2xl p-6">
+            <div className="w-10 h-10 mb-6 bg-white border border-black/10 rounded-xl flex items-center justify-center">
+              <img
+                src="/images/shopos-web/shopifysync.png"
+                alt="Shopify sync"
+                className="w-[24px] h-[27.5px] object-contain"
+              />
+            </div>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Gap Analysis</h3>
+            <p className="text-[#525252] text-[14px] leading-[22px]">
+              Files knows your catalog. It knows what content exists
+for each SKU and what's missing.
+"43 products have no lifestyle shots. Generate them?" → Yes.
             </p>
           </div>
 

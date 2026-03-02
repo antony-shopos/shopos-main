@@ -105,7 +105,7 @@ export default function Navbar() {
                     title="Loops"
                     desc="Performance improves itself"
                     icon="/images/navbar/loops.svg"
-                    href="/loops"
+                    href="/product/loops"
                   />
                   <DropdownItem
                     title="Spaces"
@@ -117,25 +117,25 @@ export default function Navbar() {
                     title="Files"
                     desc="A library of proven winners"
                     icon="/images/navbar/files.svg"
-                    href="/files"
+                    href="/product/files"
                   />
                   <DropdownItem
                     title="Refine"
                     desc="Human edits train intelligence"
                     icon="/images/navbar/refine.svg"
-                    href="/refine"
+                    href="/product/refine"
                   />
                   <DropdownItem
                     title="Cowork"
                     desc="Your AI commerce operator"
                     icon="/images/navbar/cowork.svg"
-                    href="/cowork"
+                    href="/product/cowork"
                   />
                   <DropdownItem
                     title="Brand Memory"
                     desc="Brand rules, always remembered"
                     icon="/images/navbar/memory.svg"
-                    href="/brand-memory"
+                    href="/product/brand-memory"
                   />
                 </div>
               </div>
@@ -209,7 +209,7 @@ export default function Navbar() {
                   title="Loops"
                   desc="Performance improves itself"
                   icon="/images/navbar/loops.svg"
-                  href="/loops"
+                  href="/product/loops"
                   onClick={() => setMobileOpen(false)}
                 />
                 <DropdownItem
@@ -223,28 +223,28 @@ export default function Navbar() {
                   title="Files"
                   desc="A library of proven winners"
                   icon="/images/navbar/files.svg"
-                  href="/files"
+                  href="/product/files"
                   onClick={() => setMobileOpen(false)}
                 />
                 <DropdownItem
                   title="Refine"
                   desc="Human edits train intelligence"
                   icon="/images/navbar/refine.svg"
-                  href="/refine"
+                  href="/product/refine"
                   onClick={() => setMobileOpen(false)}
                 />
                 <DropdownItem
                   title="Cowork"
                   desc="Your AI commerce operator"
                   icon="/images/navbar/cowork.svg"
-                  href="/cowork"
+                  href="/product/cowork"
                   onClick={() => setMobileOpen(false)}
                 />
                 <DropdownItem
                   title="Brand Memory"
                   desc="Brand rules, always remembered"
                   icon="/images/navbar/memory.svg"
-                  href="/brand-memory"
+                  href="/product/brand-memory"
                   onClick={() => setMobileOpen(false)}
                 />
               </div>

@@ -2,7 +2,7 @@ import SectionLayout from '@/components/SectionLayout'
 
 export default function ShoposBrandMemoryHero() {
   return (
-    <SectionLayout className="bg-[#FAFAFA] relative" borderClass="border-[#E5E5E5]">
+    <SectionLayout className="bg-[#FAFAFA] relative" borderClass="border-[#D4D4D4]">
       <div className="relative py-16 md:py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
         {/* Side Gradient Fades INSIDE locked container */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-[#FAFAFA] to-transparent" />
@@ -26,8 +26,8 @@ export default function ShoposBrandMemoryHero() {
               marginBottom: '8px',
             }}
           >
-            Your brand DNA, <br className="hidden md:block" />
-            machine-readable
+            Set your brand DNA once. <br className="hidden md:block" />
+            Every generation follows it.
           </h1>
 
           {/* Description */}
@@ -43,8 +43,12 @@ export default function ShoposBrandMemoryHero() {
               margin: '0 auto 24px auto',
             }}
           >
-            Static identity that everything references. Colors, fonts, logos, voice guidelines.
-            Upload once. Used everywhere.
+            Three people using AI without Brand Memory means three different visual styles, three
+            different tones, three different brands.
+            <br />
+            <br />
+            Brand Memory stores your identity in one place and applies it to every Space, every
+            Batch job, every Cowork session. Automatically. Every time.
           </p>
         </div>
 
@@ -62,11 +66,14 @@ export default function ShoposBrandMemoryHero() {
                 className="w-[24px] h-[24px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Upload</h3>
-            <p className="text-[#525252] text-[14px] leading-[22px]">
-              Complete onboarding in 15 minutes. Essentials walks through 6 spaces from logos to
-              photography style.
-            </p>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Visual Identity</h3>
+            <ul className="list-disc pl-5 text-[#525252] text-[14px] leading-[22px] space-y-1">
+              <li>Brand colors (primary, secondary, accent)</li>
+              <li>Typography preferences</li>
+              <li>Logo placement rules</li>
+              <li>Photography style (minimal, editorial, lifestyle, studio)</li>
+              <li>Lighting direction (natural, studio, warm, cool)</li>
+            </ul>
           </div>
 
           {/* Card 2 */}
@@ -78,11 +85,13 @@ export default function ShoposBrandMemoryHero() {
                 className="w-[24px] h-[24px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Reference</h3>
-            <p className="text-[#525252] text-[14px] leading-[22px]">
-              Every output checks Memory first. Creating a photo? Memory provides approved colors
-              and logo rules.
-            </p>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Model Preferences</h3>
+            <ul className="list-disc pl-5 text-[#525252] text-[14px] leading-[22px] space-y-1">
+              <li>Preferred body types, age ranges, skin tones</li>
+              <li>Default poses and expressions</li>
+              <li>Styling direction</li>
+              <li>Hair and makeup guidelines</li>
+            </ul>
           </div>
 
           {/* Card 3 */}
@@ -94,16 +103,55 @@ export default function ShoposBrandMemoryHero() {
                 className="w-[24px] h-[27.5px] object-contain"
               />
             </div>
-            <h3 className="font-semibold text-[#0A0A0A] mb-3">Update</h3>
-            <p className="text-[#525252] text-[14px] leading-[22px]">
-              Single source of truth. Rebrand happening? Update once, and every future output
-              follows suit.
-            </p>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Scenes & Settings</h3>
+            <ul className="list-disc pl-5 text-[#525252] text-[14px] leading-[22px] space-y-1">
+              <li>Background preferences by product category</li>
+              <li>Recurring environments (coffee shop, gym, office, beach)</li>
+              <li>Seasonal scene variations</li>
+              <li>Prop preferences</li>
+            </ul>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-[#FFFFFF] rounded-2xl p-6">
+            <div className="w-10 h-10 mb-6 bg-white border border-black/10 rounded-xl flex items-center justify-center">
+              <img
+                src="/images/shopos-web/shopifysync.png"
+                alt="Shopify sync"
+                className="w-[24px] h-[27.5px] object-contain"
+              />
+            </div>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Brand Voice</h3>
+            <ul className="list-disc pl-5 text-[#525252] text-[14px] leading-[22px] space-y-1">
+              <li>Tone (casual, professional, playful, luxury)</li>
+              <li>Sentence structure preferences</li>
+              <li>Words to use, words to avoid</li>
+              <li>CTA patterns</li>
+              <li>Product naming conventions</li>
+            </ul>
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-[#FFFFFF] rounded-2xl p-6">
+            <div className="w-10 h-10 mb-6 bg-white border border-black/10 rounded-xl flex items-center justify-center">
+              <img
+                src="/images/shopos-web/shopifysync.png"
+                alt="Shopify sync"
+                className="w-[24px] h-[27.5px] object-contain"
+              />
+            </div>
+            <h3 className="font-semibold text-[#0A0A0A] mb-3">Compliance Rules</h3>
+            <ul className="list-disc pl-5 text-[#525252] text-[14px] leading-[22px] space-y-1">
+              <li>Category-specific restrictions</li>
+              <li>Marketplace-specific requirements</li>
+              <li>Legal disclaimers</li>
+              <li>Claim substantiation rules</li>
+            </ul>
           </div>
         </div>
       </div>
       {/* Bottom dashed line aligned to layout */}
-      <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen border-t border-dashed border-[#E5E5E5]" />
+      <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen border-t border-dashed border-[#D4D4D4]" />
     </SectionLayout>
   )
 }

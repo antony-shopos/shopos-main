@@ -2,7 +2,7 @@ import SectionLayout from "@/components/SectionLayout"
 
 export default function CtaSection() {
   return (
-    <SectionLayout className="bg-[#FAFAFA]" borderClass="border-[#E5E5E5]">
+    <SectionLayout className="bg-[#FAFAFA]" borderClass="border-[#D4D4D4]">
 
       <div className="relative py-16 md:py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
 

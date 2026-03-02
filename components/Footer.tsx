@@ -54,19 +54,19 @@ export default function Footer() {
                       <li>Use Cases</li>
                       <li>Spaces</li>
                       <li>
-                        <Link href="/loops" className="hover:opacity-70 transition">
+                        <Link href="/product/loops" className="hover:opacity-70 transition">
                           Loops
                         </Link>
                       </li>
-                      <li><Link href="/refine" className="hover:opacity-70 transition">Refine</Link></li>
-                      <li><Link href="/files" className="hover:opacity-70 transition">Files</Link></li>
+                      <li><Link href="/product/refine" className="hover:opacity-70 transition">Refine</Link></li>
+                      <li><Link href="/product/files" className="hover:opacity-70 transition">Files</Link></li>
                       <li>
-                        <Link href="/brand-memory" className="hover:opacity-70 transition">
+                        <Link href="/product/brand-memory" className="hover:opacity-70 transition">
                           Brand Memory
                         </Link>
                       </li>
                       <li>
-                        <Link href="/cowork" className="hover:opacity-70 transition">
+                        <Link href="/product/cowork" className="hover:opacity-70 transition">
                           Cowork
                         </Link>
                       </li>
