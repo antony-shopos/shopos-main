@@ -6,6 +6,12 @@ import TryShopOS from '@/components/sections/landing-page/try-shopos'
 import SocialProof from '@/components/sections/landing-page/social-proof'
 import SpacesSection from '@/components/sections/landing-page/spaces'
 import FAQ from '@/components/sections/landing-page/faq'
+import RunYourStore from '@/components/sections/landing-page/runyourstore'
+import OnePlatformSection from '@/components/sections/landing-page/oneplatform'
+import BuildingSection from '@/components/sections/landing-page/building'
+import MakeSection from '@/components/sections/landing-page/make-section'
+import TestimonialSection from '@/components/sections/landing-page/testimonial'
+import CtaSection from '@/components/sections/landing-page/cta-section'
 
 export const metadata: Metadata = {
   title: 'ShopOS: AI Coworkers for Brands & eCommerce',
@@ -23,8 +29,14 @@ export default function ShoposLandingPage() {
       <LandingHero />
       <TryShopOS />
       <SocialProof />
+      <RunYourStore />
+      <OnePlatformSection />
       <SpacesSection />
+      <BuildingSection />
+      <MakeSection />
+      <TestimonialSection />
       <FAQ />
+      <CtaSection />
       <Footer />
     </main>
   )

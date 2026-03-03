@@ -207,8 +207,7 @@ export default function FAQ() {
 
       </div>
     </section>
-    {/* Bottom dashed line aligned to layout */}
-      <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen border-t border-dashed border-[#D4D4D4]" />
+
     </SectionLayout>
   )
 }
