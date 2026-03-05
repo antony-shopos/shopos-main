@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar-all'
 import Footer from '@/components/Footer'
-import ShoposRefineHero from '@/components/sections/refine/hero'
+import ShoposRefineHero from '@/components/sections/product/refine/hero'
 
 export const metadata: Metadata = {
   title: 'Refine - AI Gets You 90%, Humans Close the Gap',

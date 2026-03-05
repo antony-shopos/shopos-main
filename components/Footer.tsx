@@ -58,8 +58,16 @@ export default function Footer() {
                           Loops
                         </Link>
                       </li>
-                      <li><Link href="/product/refine" className="hover:opacity-70 transition">Refine</Link></li>
-                      <li><Link href="/product/files" className="hover:opacity-70 transition">Files</Link></li>
+                      <li>
+                        <Link href="/product/refine" className="hover:opacity-70 transition">
+                          Refine
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/product/files" className="hover:opacity-70 transition">
+                          Files
+                        </Link>
+                      </li>
                       <li>
                         <Link href="/product/brand-memory" className="hover:opacity-70 transition">
                           Brand Memory
@@ -89,7 +97,11 @@ export default function Footer() {
                     <ul className="space-y-3 text-[14px] text-[#525252]">
                       <li>Context Graph</li>
                       <li>D2C Brand Fund</li>
-                      <li>About Us</li>
+                      <li>
+                        <Link href="/about-us" className="hover:opacity-70 transition">
+                          About Us
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>

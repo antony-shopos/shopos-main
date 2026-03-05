@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar-all'
 import Footer from '@/components/Footer'
-import ShoposBrandMemoryHero from '@/components/sections/brand-memory/hero'
-import BrandMemoryStore from '@/components/sections/brand-memory/brand-memory-store'
+import ShoposBrandMemoryHero from '@/components/sections/product/brand-memory/hero'
+import BrandMemoryStore from '@/components/sections/product/brand-memory/brand-memory-store'
 
 export const metadata: Metadata = {
   title: 'Brand Memory - Your Brand DNA Inside ShopOS',

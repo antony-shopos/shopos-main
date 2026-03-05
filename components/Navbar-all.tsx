@@ -39,12 +39,10 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false)
 
-  /* ============================= */
-  /* BODY SCROLL LOCK */
-  /* ============================= */
   useEffect(() => {
     if (mobileOpen) {
-      const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth
+      const scrollBarWidth =
+        window.innerWidth - document.documentElement.clientWidth
 
       document.body.style.overflow = 'hidden'
       document.body.style.paddingRight = `${scrollBarWidth}px`
@@ -61,10 +59,8 @@ export default function Navbar() {
 
   return (
     <header className="w-full border-b border-black/5 relative z-50">
-      {/* ============================= */}
-      {/* TOP BAR */}
-      {/* ============================= */}
-      <div className="max-w-[1440px] mx-auto px-5 md:px-12 lg:px-24 py-5 flex items-center justify-between">
+      <div className="max-w-[1440px] mx-auto px-5 md:px-12 lg:px-24 py-5 flex items-center justify-between relative">
+
         {/* LEFT */}
         <div className="flex items-center gap-8">
           <Link href="/">
@@ -74,96 +70,105 @@ export default function Navbar() {
               style={{ width: '119.95px', height: '28px' }}
             />
           </Link>
+        </div>
 
-          {/* DESKTOP NAV */}
-          <nav className="hidden md:flex items-center gap-6 relative">
-            {/* PRODUCTS */}
+        {/* DESKTOP NAV (CENTERED) */}
+        <nav className="hidden md:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
+          
+          {/* PRODUCTS */}
+          <div
+            className="relative flex items-center"
+            onMouseEnter={() => setDesktopOpen(true)}
+            onMouseLeave={() => setDesktopOpen(false)}
+          >
+            <span className="cursor-pointer text-[12px] text-[#525252]">
+              Products
+            </span>
+
+            {/* Hover bridge */}
+            {desktopOpen && (
+              <div className="absolute left-0 top-full h-6 w-full" />
+            )}
+
             <div
-              className="relative"
-              onMouseEnter={() => setDesktopOpen(true)}
-              onMouseLeave={() => setDesktopOpen(false)}
+              className={`absolute left-0 top-[40px] w-[820px] transition-all duration-300 ${
+                desktopOpen
+                  ? 'opacity-100 translate-y-0 pointer-events-auto'
+                  : 'opacity-0 translate-y-2 pointer-events-none'
+              }`}
             >
-              <span className="cursor-pointer text-[12px] text-[#525252] pb-6">Products</span>
-
-              {desktopOpen && <div className="absolute left-0 top-[28px] h-6 w-full" />}
-
-              <div
-                className={`absolute left-0 top-[40px] w-[820px] transition-all duration-300 ${
-                  desktopOpen
-                    ? 'opacity-100 translate-y-0 pointer-events-auto'
-                    : 'opacity-0 translate-y-2 pointer-events-none'
-                }`}
-              >
-                <div className="bg-white rounded-[12px] shadow-[0_30px_80px_rgba(0,0,0,0.15)] p-[20px] grid grid-cols-2 gap-x-[20px] gap-y-[12px]">
-                  <DropdownItem
-                    title="Use Cases"
-                    desc="Built for every brand"
-                    icon="/images/navbar/usecases.svg"
-                    href="/use-cases"
-                  />
-                  <DropdownItem
-                    title="Loops"
-                    desc="Performance improves itself"
-                    icon="/images/navbar/loops.svg"
-                    href="/product/loops"
-                  />
-                  <DropdownItem
-                    title="Spaces"
-                    desc="Workflows trained for ecommerce"
-                    icon="/images/navbar/spaces.svg"
-                    href="/spaces"
-                  />
-                  <DropdownItem
-                    title="Files"
-                    desc="A library of proven winners"
-                    icon="/images/navbar/files.svg"
-                    href="/product/files"
-                  />
-                  <DropdownItem
-                    title="Refine"
-                    desc="Human edits train intelligence"
-                    icon="/images/navbar/refine.svg"
-                    href="/product/refine"
-                  />
-                  <DropdownItem
-                    title="Cowork"
-                    desc="Your AI commerce operator"
-                    icon="/images/navbar/cowork.svg"
-                    href="/product/cowork"
-                  />
-                  <DropdownItem
-                    title="Brand Memory"
-                    desc="Brand rules, always remembered"
-                    icon="/images/navbar/memory.svg"
-                    href="/product/brand-memory"
-                  />
-                </div>
+              <div className="bg-white rounded-[12px] shadow-[0_30px_80px_rgba(0,0,0,0.15)] p-[20px] grid grid-cols-2 gap-x-[20px] gap-y-[12px]">
+                <DropdownItem
+                  title="Use Cases"
+                  desc="Built for every brand"
+                  icon="/images/navbar/usecases.svg"
+                  href="/use-cases"
+                />
+                <DropdownItem
+                  title="Loops"
+                  desc="Performance improves itself"
+                  icon="/images/navbar/loops.svg"
+                  href="/product/loops"
+                />
+                <DropdownItem
+                  title="Spaces"
+                  desc="Workflows trained for ecommerce"
+                  icon="/images/navbar/spaces.svg"
+                  href="/spaces"
+                />
+                <DropdownItem
+                  title="Files"
+                  desc="A library of proven winners"
+                  icon="/images/navbar/files.svg"
+                  href="/product/files"
+                />
+                <DropdownItem
+                  title="Refine"
+                  desc="Human edits train intelligence"
+                  icon="/images/navbar/refine.svg"
+                  href="/product/refine"
+                />
+                <DropdownItem
+                  title="Cowork"
+                  desc="Your AI commerce operator"
+                  icon="/images/navbar/cowork.svg"
+                  href="/product/cowork"
+                />
+                <DropdownItem
+                  title="Brand Memory"
+                  desc="Brand rules, always remembered"
+                  icon="/images/navbar/memory.svg"
+                  href="/product/brand-memory"
+                />
               </div>
             </div>
+          </div>
 
-            <Link href="/case-studies" className="text-[12px] text-[#525252]">
-              Case Studies
-            </Link>
-            <Link href="/resources" className="text-[12px] text-[#525252]">
-              Resources
-            </Link>
-            <Link href="/pricing" className="text-[12px] text-[#525252]">
-              Pricing
-            </Link>
-          </nav>
-        </div>
+          <Link href="/case-studies" className="text-[12px] text-[#525252] flex items-center">
+            Case Studies
+          </Link>
+
+          <Link href="/resources" className="text-[12px] text-[#525252] flex items-center">
+            Resources
+          </Link>
+
+          <Link href="/pricing" className="text-[12px] text-[#525252] flex items-center">
+            Pricing
+          </Link>
+        </nav>
 
         {/* RIGHT */}
         <div className="flex items-center">
-          {/* DESKTOP CTA */}
           <div className="hidden md:block">
             <button className="flex items-center gap-2 bg-black text-white px-5 py-2 rounded-full text-[14px] font-medium">
               Get Early Access
             </button>
           </div>
 
-          {/* MOBILE TOGGLE */}
-          <button className="md:hidden ml-4" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button
+            className="md:hidden ml-4"
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
             {mobileOpen ? (
               <span style={{ fontSize: '24px' }}>✕</span>
             ) : (
@@ -173,16 +178,13 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ============================= */}
-      {/* MOBILE MENU */}
-      {/* ============================= */}
+      {/* MOBILE MENU (unchanged) */}
       <div
         className={`fixed inset-0 top-[72px] bg-[#F6F6F6] transition-transform duration-300 ${
           mobileOpen ? 'translate-x-0' : 'translate-x-full'
         } md:hidden z-40 overflow-y-auto`}
       >
         <div className="pt-12 px-6 flex flex-col gap-6 pb-16">
-          {/* PRODUCTS ACCORDION */}
           <div>
             <button
               onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
@@ -198,80 +200,26 @@ export default function Navbar() {
               }`}
             >
               <div className="flex flex-col gap-4">
-                <DropdownItem
-                  title="Use Cases"
-                  desc="Built for every brand"
-                  icon="/images/navbar/usecases.svg"
-                  href="/use-cases"
-                  onClick={() => setMobileOpen(false)}
-                />
-                <DropdownItem
-                  title="Loops"
-                  desc="Performance improves itself"
-                  icon="/images/navbar/loops.svg"
-                  href="/product/loops"
-                  onClick={() => setMobileOpen(false)}
-                />
-                <DropdownItem
-                  title="Spaces"
-                  desc="Workflows trained for ecommerce"
-                  icon="/images/navbar/spaces.svg"
-                  href="/spaces"
-                  onClick={() => setMobileOpen(false)}
-                />
-                <DropdownItem
-                  title="Files"
-                  desc="A library of proven winners"
-                  icon="/images/navbar/files.svg"
-                  href="/product/files"
-                  onClick={() => setMobileOpen(false)}
-                />
-                <DropdownItem
-                  title="Refine"
-                  desc="Human edits train intelligence"
-                  icon="/images/navbar/refine.svg"
-                  href="/product/refine"
-                  onClick={() => setMobileOpen(false)}
-                />
-                <DropdownItem
-                  title="Cowork"
-                  desc="Your AI commerce operator"
-                  icon="/images/navbar/cowork.svg"
-                  href="/product/cowork"
-                  onClick={() => setMobileOpen(false)}
-                />
-                <DropdownItem
-                  title="Brand Memory"
-                  desc="Brand rules, always remembered"
-                  icon="/images/navbar/memory.svg"
-                  href="/product/brand-memory"
-                  onClick={() => setMobileOpen(false)}
-                />
+                <DropdownItem title="Use Cases" desc="Built for every brand" icon="/images/navbar/usecases.svg" href="/use-cases" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Loops" desc="Performance improves itself" icon="/images/navbar/loops.svg" href="/product/loops" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Spaces" desc="Workflows trained for ecommerce" icon="/images/navbar/spaces.svg" href="/spaces" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Files" desc="A library of proven winners" icon="/images/navbar/files.svg" href="/product/files" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Refine" desc="Human edits train intelligence" icon="/images/navbar/refine.svg" href="/product/refine" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Cowork" desc="Your AI commerce operator" icon="/images/navbar/cowork.svg" href="/product/cowork" onClick={() => setMobileOpen(false)} />
+                <DropdownItem title="Brand Memory" desc="Brand rules, always remembered" icon="/images/navbar/memory.svg" href="/product/brand-memory" onClick={() => setMobileOpen(false)} />
               </div>
             </div>
           </div>
 
-          <Link
-            href="/case-studies"
-            onClick={() => setMobileOpen(false)}
-            className="text-[20px] text-[#525252]"
-          >
+          <Link href="/case-studies" onClick={() => setMobileOpen(false)} className="text-[20px] text-[#525252]">
             Case Studies
           </Link>
 
-          <Link
-            href="/resources"
-            onClick={() => setMobileOpen(false)}
-            className="text-[20px] text-[#525252]"
-          >
+          <Link href="/resources" onClick={() => setMobileOpen(false)} className="text-[20px] text-[#525252]">
             Resources
           </Link>
 
-          <Link
-            href="/pricing"
-            onClick={() => setMobileOpen(false)}
-            className="text-[20px] text-[#525252]"
-          >
+          <Link href="/pricing" onClick={() => setMobileOpen(false)} className="text-[20px] text-[#525252]">
             Pricing
           </Link>
 

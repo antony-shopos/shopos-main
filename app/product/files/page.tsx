@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar-all'
 import Footer from '@/components/Footer'
-import ShoposFilesHero from '@/components/sections/files/hero'
+import ShoposFilesHero from '@/components/sections/product/files/hero'
 
 export const metadata: Metadata = {
   title: 'Files - Smart Asset Management for Commerce',

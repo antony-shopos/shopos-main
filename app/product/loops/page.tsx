@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar-all'
 import Footer from '@/components/Footer'
-import ShoposLoopsHero from '@/components/sections/loops/hero'
+import ShoposLoopsHero from '@/components/sections/product/loops/hero'
 
 export const metadata: Metadata = {
   title: 'Loops - Autonomous AI Agents That Test Your Content 24/7',

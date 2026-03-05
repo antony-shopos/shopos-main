@@ -1,8 +1,8 @@
 import Navbar from '@/components/Navbar-all'
 import Footer from '@/components/Footer'
-import ShoposWebHero from '@/components/sections/shopos-web/hero'
-import SpacesSection from '@/components/sections/shopos-web/spaces'
-import CtaSection from '@/components/sections/shopos-web/cta-section'
+import ShoposWebHero from '@/components/sections/product/shopos-web/hero'
+import SpacesSection from '@/components/sections/product/shopos-web/spaces'
+import CtaSection from '@/components/sections/product/shopos-web/cta-section'
 
 export default function ShoposWeb() {
   return (
